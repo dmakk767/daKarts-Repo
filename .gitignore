@@ -4,6 +4,7 @@ daKarts/[Oo]bj/
 daKarts/[Bb]uild/
 daKarts/[Bb]uilds/
 daKarts/Assets/AssetStoreTools*
+daKarts/Assets/*
 daKarts/venv
 
 # Visual Studio cache directory
