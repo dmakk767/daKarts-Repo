@@ -501,7 +501,7 @@ namespace KartGame.KartSystems
                 // manual velocity steering coefficient
                 float velocitySteering = 25f;
 
-                // If the karts lands with a forward not in the velocity direction, we start the drift
+                // If the kart lands with a forward not in the velocity direction, we start the drift
                 if (GroundPercent >= 0.0f && m_PreviousGroundPercent < 0.1f)
                 {
                     Vector3 flattenVelocity = Vector3.ProjectOnPlane(Rigidbody.velocity, m_VerticalReference).normalized;
@@ -516,7 +516,7 @@ namespace KartGame.KartSystems
                 // Drift Management
                 if (!IsDrifting)
                 {
-                    if ((WantsToDrift || isBraking) && currentSpeed > maxSpeed * MinSpeedPercentToFinishDrift)
+                    if ((WantsToDrift || isBraking) && currentSpeed > 1 * MinSpeedPercentToFinishDrift)
                     {
                         IsDrifting = true;
                         m_DriftTurningPower = turningPower + (Mathf.Sign(turningPower) * DriftAdditionalSteer);
