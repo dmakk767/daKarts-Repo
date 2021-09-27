@@ -6,6 +6,7 @@ daKarts/[Bb]uilds/
 daKarts/Assets/AssetStoreTools*
 daKarts/Assets/*
 daKarts/venv
+daKarts/*.zip
 
 # Visual Studio cache directory
 daKarts/.vs/
